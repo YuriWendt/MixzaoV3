@@ -3,7 +3,7 @@ import { theme } from '../../global/theme';
 import cardbackground from '../../assets/cardbackground.png'
 
 export const Card = styled.div`
-    width: 208px;
+    width: 207px;
     height: 88px;
     margin-right: 16px;
     border: 1px solid ${theme.colors.black.color40};
