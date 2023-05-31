@@ -29,11 +29,9 @@ export const CardPlayer = styled.div`
 	-webkit-transition: 200ms ease-in;
 	-o-transition: 200ms ease-in;
 	transition: 200ms ease-in;
-    
 `
 
 export const CardPicture = styled.div`
-
     width: 100%;
 	height: 100%;
 	-o-object-fit: contain;
@@ -43,7 +41,7 @@ export const CardPicture = styled.div`
 	bottom: 0;
     top: 2rem;
     left: 9rem;
-    img{
+    img {
         border-radius: 6px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     }
@@ -78,4 +76,10 @@ export const CardStatsName = styled.h2`
 	font-size: 1.0rem;
 	text-transform: uppercase;
 	overflow: hidden;
+`
+
+export const DivStyled = styled.div`
+    width: 500px;
+    height: 600px;
+    background: ${theme.colors.primary.color100};
 `

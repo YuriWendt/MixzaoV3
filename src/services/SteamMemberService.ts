@@ -9,9 +9,9 @@ type PageableProps = {
    linesPerPage?: any;
 }
 
-const key = '04AEF6D4639DE1B10F95A109A1B51C51';
+//const key = '04AEF6D4639DE1B10F95A109A1B51C51';
 
-async function findUser(steamid: string) {
+async function findUser(key: string, steamid: string) {
    return await API_CLIENT.get(`?key=${key}&steamids=${steamid}`);
 }
 

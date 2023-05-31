@@ -8,7 +8,7 @@ import { Card, CardName, CardPicture, CardPlayer, CardStats, CardStatsName } fro
 import { theme } from './../../global/theme';
 
 
-export function Users() {
+export function Home() {
 
     /* const navigate = useNavigate(); */
     /* const [members, setMembers] = useState<CompanyDTO[]>([]); */
@@ -46,6 +46,7 @@ export function Users() {
             <Container>
                 <Body>
                     <h1>Users</h1>
+                    
                     {members.map(member =>
                         <tr key={member.realname}>
                             <CardPlayer>
