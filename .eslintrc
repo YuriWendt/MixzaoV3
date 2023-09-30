@@ -1,0 +1,42 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+        //"eslint:recommended",
+        //"plugin:import/errors",
+        //"plugin:import/warnings",
+        //"plugin:import/typescript",
+        //"plugin:@typescript-eslint/recommended",
+        //"plugin:react-hooks/recommended"
+    ],
+    "rules": {
+        "arrow-parens": "off",
+        "brace-style": "off",
+        "comma-dangle": "off",
+        "comma-spacing": ["error", {"after": true}],
+        "curly": "off",
+        "id-length": ["warn", {"min": 2, "exceptions": ["_", "a", "b", "i", "n", "q", "x", "y"]}],
+        "import/namespace": "off",
+        "indent": ["error", 4, {"SwitchCase": 1}],
+        "linebreak-style": "off",
+        "keyword-spacing": ["error", {"after": true, "before": true}],
+        "object-curly-spacing": ["error", "always"],
+        "max-len": "off",
+        "no-explicit-any": "off",
+        "no-multiple-empty-lines": ["error", {"max": 1}],
+        "no-prototype-builtins": "off",
+        "no-return-await": "error",
+        "no-trailing-spaces": ["error"],
+        "no-unused-vars": "off",
+        "no-var": "error",
+        "quotes": ["error", "double"],
+        "require-await": "error",
+        "require-jsdoc": "off",
+        "semi": ["error", "always"],
+        "space-in-parens": ["error", "never"],
+        "space-before-function-paren": ["error", {"anonymous": "always", "named": "never", "asyncArrow": "always"}],
+        "spaced-comment": "off",
+        "import/no-named-as-default": "off",
+        "@typescript-eslint/no-non-null-assertion": "off"
+    }
+}

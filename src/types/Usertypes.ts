@@ -8,4 +8,4 @@ type UserDTO = {
     profileurl: string;
 }
 
-export type { UserDTO }
+export type { UserDTO };

@@ -1,12 +1,12 @@
-import styled, { css } from 'styled-components';
-import { GridProps } from '../types/Gridtypes';
+import styled, { css } from "styled-components";
+import { GridProps } from "../types/Gridtypes";
 
 export const Container = styled.div`
    
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: border-box;
-    font: 400 16px 'Ubuntu', sans-serif;
+    font: 400 16px "Ubuntu", sans-serif;
 
     &:before, &:after{
         content: " ";
@@ -24,7 +24,7 @@ export const Container = styled.div`
         max-width: 1328px;
     } 
 
-`
+`;
 
 export const Row = styled.div`
     width: 100%;
@@ -39,7 +39,7 @@ export const Row = styled.div`
     &:after{
         clear: both;
     }
-`
+`;
 
 export const Column = styled.div<GridProps>`
     float: left;
@@ -60,7 +60,7 @@ export const Column = styled.div<GridProps>`
     @media only screen and (min-width: 1024px) {
         ${({ desktop }) => desktop && widthGrid(desktop)}
     } 
-`
+`;
 
 function widthGrid(value: number) {
     const width = value / 12 * 100;

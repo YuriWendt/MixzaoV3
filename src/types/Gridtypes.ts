@@ -4,4 +4,4 @@ type GridProps = {
     tablet?: number
 }
 
-export type { GridProps }
+export type { GridProps };
