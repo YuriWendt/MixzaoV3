@@ -1,11 +1,11 @@
-import styled, { keyframes } from 'styled-components';
-import { theme } from '../../global/theme';
+import styled, { keyframes } from "styled-components";
+import { theme } from "../../global/theme";
 
 const RightToLeft = keyframes`
     to {
         transform: translateX(-168px);
     }
-`
+`;
 
 export const MobileContainer = styled.header`
     display: none;
@@ -17,7 +17,7 @@ export const MobileContainer = styled.header`
         display: flex;
         justify-content: space-between;
     }
-`
+`;
 
 export const MobileMenu = styled.div`
     display: none;
@@ -26,7 +26,7 @@ export const MobileMenu = styled.div`
     @media ${theme.screenSizes.smallScreen} {
         display: block;
     }
-`
+`;
 
 export const MobileMenuContainer = styled.div<{active: boolean}>`
     width: 220px;
@@ -48,7 +48,7 @@ export const MobileMenuContainer = styled.div<{active: boolean}>`
         padding-top: 4px;
         cursor: pointer;
     }
-`
+`;
 
 export const MenuOverlay = styled.div<{active: boolean}>`
     position: fixed;
@@ -59,7 +59,7 @@ export const MenuOverlay = styled.div<{active: boolean}>`
     background-color: rgba(0,0,0,0.3);
     z-index: 999;
     overflow: hidden;
-`
+`;
 
 export const Content = styled.div`
     display: flex;
@@ -69,7 +69,7 @@ export const Content = styled.div`
         margin-left: auto;
         cursor: pointer;
     }
-`
+`;
 
 export const Links = styled.ul<{mobileHidden?: boolean}>`
     display: flex;
@@ -78,7 +78,7 @@ export const Links = styled.ul<{mobileHidden?: boolean}>`
     @media ${theme.screenSizes.smallScreen} {
         flex-direction: column;
     }
-`
+`;
 
 export const DropdownSpan = styled.span`
     display: flex;
@@ -87,7 +87,7 @@ export const DropdownSpan = styled.span`
     @media ${theme.screenSizes.smallScreen} {
         display: none;
     }
-`
+`;
 
 export const Link = styled.li`
     display: flex;
@@ -106,13 +106,13 @@ export const Link = styled.li`
     @media only screen and (max-width: 1023px) {
         margin: 12px 0;
     }
-`
+`;
 
 export const Separator = styled.div`
     border: 0.5px solid ${theme.colors.black.color20};
     width: 99.8%;
     box-shadow: 0px 2px 7px 1px rgb(0 0 0 / 20%); 
-`
+`;
 
 export const AlignRight = styled.div`
     display: flex;
@@ -122,11 +122,11 @@ export const AlignRight = styled.div`
     &:hover {
         text-decoration: underline;
     }
-`
+`;
 
 export const AdminText = styled.span`
     @media ${theme.screenSizes.smallScreen} {
         padding-left: 8px;
         font-size: 18px;
     }
-`
+`;

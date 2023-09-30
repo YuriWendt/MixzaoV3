@@ -1,15 +1,14 @@
-import { Navbar } from './components/navbar';
-import { MainRoutes } from './routes';
-
+import { Navbar } from "./components/navbar";
+import { MainRoutes } from "./routes";
 
 function App() {
 
-  return (
-    <>
-      <Navbar />
-      <MainRoutes  />
-    </>
-  )
+    return (
+        <>
+            <Navbar />
+            <MainRoutes  />
+        </>
+    );
 }
 
-export default App
+export default App;

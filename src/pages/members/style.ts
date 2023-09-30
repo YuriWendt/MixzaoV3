@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { theme } from '../../global/theme';
-import cardbackground from '../../assets/cardbackground.png'
+import styled from "styled-components";
+import { theme } from "../../global/theme";
+import cardbackground from "../../assets/cardbackground.png";
 
 export const Card = styled.div`
     width: 208px;
@@ -14,7 +14,7 @@ export const Card = styled.div`
         display: block;
         margin: 16px 16px;
     }
-`
+`;
 
 export const CardPlayer = styled.div`
     position: relative;
@@ -29,7 +29,7 @@ export const CardPlayer = styled.div`
 	-webkit-transition: 200ms ease-in;
 	-o-transition: 200ms ease-in;
 	transition: 200ms ease-in;
-`
+`;
 
 export const CardPicture = styled.div`
     width: 100%;
@@ -45,7 +45,8 @@ export const CardPicture = styled.div`
         border-radius: 6px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     }
-`
+`;
+
 export const CardName = styled.h1`
     position: absolute;
     left: 0px;
@@ -56,7 +57,7 @@ export const CardName = styled.h1`
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	overflow: hidden;
-`
+`;
 
 export const CardStats = styled.div`
     position: absolute;
@@ -68,7 +69,7 @@ export const CardStats = styled.div`
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	overflow: hidden;
-`
+`;
 
 export const CardStatsName = styled.h2`
     color:  rgba(205,186,3,1);
@@ -76,10 +77,10 @@ export const CardStatsName = styled.h2`
 	font-size: 1.0rem;
 	text-transform: uppercase;
 	overflow: hidden;
-`
+`;
 
 export const DivStyled = styled.div`
     width: 500px;
     height: 600px;
     background: ${theme.colors.primary.color100};
-`
+`;

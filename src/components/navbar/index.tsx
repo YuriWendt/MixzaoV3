@@ -5,7 +5,6 @@ import { theme } from "../../global/theme";
 import { Icon } from "../icon";
 import { Content, Link, Links, Separator } from "./style";
 
-
 type RouteType = {
    name: string,
    path: string,
@@ -14,51 +13,50 @@ type RouteType = {
 }
 
 export function Navbar() {
-   const navigate = useNavigate();
-   const [routes, setRoutes] = useState<RouteType[]>([]);
-   const [builtRoutes, setBuiltRoutes] = useState(false)
+    const navigate = useNavigate();
+    const [routes, setRoutes] = useState<RouteType[]>([]);
+    const [builtRoutes, setBuiltRoutes] = useState(false);
 
-   function buildRoutes() {
-      let build: RouteType[] = [
-         {
-            name: 'Início',
-            path: '/',
-         },
-         {
-            name: 'Membros',
-            path: '/users',
-         },
-      ]
+    function buildRoutes() {
+        let build: RouteType[] = [
+            {
+                name: "Início",
+                path: "/",
+            },
+            {
+                name: "Membros",
+                path: "/users",
+            },
+        ];
 
-      setRoutes(build);
-      console.log(routes)
-      setBuiltRoutes(true)
-   }
+        setRoutes(build);
+        console.log(routes);
+        setBuiltRoutes(true);
+    }
 
-   function redirect(path: string) {
-      navigate(path);
-   }
+    function redirect(path: string) {
+        navigate(path);
+    }
 
-   useEffect(() => {
-      buildRoutes();
-   }, []);
+    useEffect(() => {
+        buildRoutes();
+    }, []);
 
-
-   return (
-      <>
-         <Container>
-            <Content>
-               <Icon src={theme.img.logo} width="100px" height="100px" />
-               <Links>
+    return (
+        <>
+            <Container>
+                <Content>
+                    <Icon src={theme.img.logo} width="100px" height="100px" />
+                    <Links>
                         {routes.map((route, index) => {
-                           return (
-                              <Link key={index}onClick={() => redirect(route.path)}> {route.name} </Link>
-                           )
+                            return (
+                                <Link key={index}onClick={() => redirect(route.path)}> {route.name} </Link>
+                            );
                         })}
-                     </Links>
-            </Content>
-         </Container >
-         <Separator />
-      </>
-   )
+                    </Links>
+                </Content>
+            </Container >
+            <Separator />
+        </>
+    );
 }

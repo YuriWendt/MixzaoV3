@@ -7,7 +7,7 @@ type IconProps = ImgHTMLAttributes<HTMLImageElement>;
 export function Icon(props: IconProps) {
     return (
         <IconImg src={props.src} alt="Icone" height={props.height} width={props.width} />
-    )
+    );
 }
 
 export function EyeIcon() {
@@ -19,6 +19,6 @@ export function EyeIcon() {
                 height: 20
             }}
         /> */}
-    )
+    );
 }
 

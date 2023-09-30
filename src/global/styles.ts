@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle, css } from 'styled-components';
-import { theme } from './theme';
+import styled, { createGlobalStyle, css } from "styled-components";
+import { theme } from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, button, textarea, select, option{
-    font: 400 16px 'Ubuntu', sans-serif;
+    font: 400 16px "Ubuntu", sans-serif;
   }
 
   input::-webkit-outer-spin-button,
@@ -46,7 +46,7 @@ export const TableContainer = styled.div`
             background-color: ${theme.colors.black.color60};
         }
     }
-`
+`;
 
 export const Table = styled.table`
     background-color: ${theme.colors.white};
@@ -62,7 +62,7 @@ export const Table = styled.table`
           padding: 12px 8px;
         }
     }
-`
+`;
 
 export const Head = styled.thead`
     background-color: ${theme.colors.primary.color100};
@@ -77,7 +77,7 @@ export const Head = styled.thead`
           font-size: 14px;
         }
     }
-`
+`;
 
 export const Body = styled.tbody`
   color: ${theme.colors.black};
@@ -94,19 +94,19 @@ export const Body = styled.tbody`
   @media ${theme.screenSizes.smallScreen} {
     font-size: 12px;
   }
-`
+`;
 
 export const CellOptions = styled.div`
     display: flex;
     justify-content:space-around;
     gap: 8px;
-`
+`;
 
 export const MenuNavigation = styled.div`
     display: flex;
     padding: 0 24px;
     margin-bottom: 40px;
-`
+`;
 
 export const Menu = styled.div<{ active?: boolean, hasCompleted?: boolean }>`
     display: flex;
@@ -128,7 +128,7 @@ export const Menu = styled.div<{ active?: boolean, hasCompleted?: boolean }>`
         color: ${theme.colors.primary.color40};
         border-bottom: 1.5px solid ${theme.colors.primary.color40};
     `};
-`
+`;
 
 export const Card = styled.div`
     width: 208px;
@@ -142,4 +142,4 @@ export const Card = styled.div`
         display: block;
         margin: 16px 16px;
     }
-`
+`;

@@ -5,8 +5,7 @@ import { findUser } from "../../services/SteamMemberService";
 import { userMix } from "../../types/SteamIdtypes";
 import { UserDTO } from "../../types/Usertypes";
 import { Card, CardName, CardPicture, CardPlayer, CardStats, CardStatsName } from "./style";
-import { theme } from './../../global/theme';
-
+import { theme } from "./../../global/theme";
 
 export function Home() {
 
@@ -15,38 +14,36 @@ export function Home() {
     const [members, setMember] = useState<UserDTO[]>([]);
     const [members1, setMember1] = useState<UserDTO[]>([]);
     const [steamid, setSteamid] = useState("");
-    /* const steamid = '76561198120292090' */
+    /* const steamid = "76561198120292090" */
 
-    async function findId() {
-        const id = userMix
-        setSteamid(id[0].steamid)
+    function findId() {
+        const id = userMix;
+        setSteamid(id[0].steamid);
     }
 
-
     async function findPage() {
-        findId()
-        console.log(steamid)
+        findId();
+        console.log(steamid);
         try {
-            const response = await findUser('76561198120292090');
+            const response = await findUser("76561198120292090", "");
             setMember(response.data.response.players);
-            console.log(response)
-        } catch (error) { }
+            console.log(response);
+        } catch (error) {
+
+        }
         finally {
         }
     }
 
-
     useEffect(() => {
-        findPage()
+        findPage();
     }, []);
-
 
     return (
         <>
             <Container>
                 <Body>
                     <h1>Users</h1>
-                    
                     {members.map(member =>
                         <tr key={member.realname}>
                             <CardPlayer>
@@ -63,5 +60,5 @@ export function Home() {
                 </Body>
             </Container>
         </>
-    )
+    );
 }
