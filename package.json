@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "deploy": "yarn build && firebase deploy",
     "lint": "eslint --ext .js,.ts .",
     "preview": "vite preview"
   },
@@ -14,6 +15,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^1.2.1",
     "cors": "^2.8.5",
+    "firebase": "^10.4.0",
     "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
